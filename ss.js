@@ -17,3 +17,4 @@ document.addEventListener('prechange', function(event) {
       console.log('Changed to ' + event.activeIndex)
     });
   });
+  
