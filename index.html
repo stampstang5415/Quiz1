@@ -37,15 +37,15 @@
       </ons-carousel>
       <div>
         <ons-row class="category" style="text-align: center;">
-          <ons-col modifier="nodivider" id="Category_1" >
-            <div class="category_wrapper">
+          <ons-col modifier="nodivider" id="Category_1"  style="width: 75px; height: 75px;">
+            <div class="category_wrapper" style="background-color: aqua" >
               <figure class="category_thumbnail">
                 <ons-icon size="30px" icon="md-face"></ons-icon>
                 <div class="category_title" id="Category_1_name">Beauty</div>
               </figure>
             </div>
           </ons-col>
-          <ons-col modifier="nodivider" id="Category_2" >
+          <ons-col modifier="nodivider" id="Category_2 "style="width: 75px; height: 75px;" >
             <div class="category_wrapper">
               <figure class="category_thumbnail">
                 <ons-icon size="30px" icon="md-directions-bike"></ons-icon>
@@ -53,17 +53,17 @@
               </figure>
             </div>
           </ons-col>
-          <ons-col modifier="nodivider" id="Category_3" >
+          <ons-col modifier="nodivider" id="Category_3"style="width: 75px; height: 75px;" >
               <div class="category_wrapper">
                 <figure class="category_thumbnail">
                   <ons-icon size="30px" icon="md-desktop-mac"></ons-icon>
-                  <div class="category_title" id="Category_3_name">Computer</div>
+                  <div class="category_title" id="Category_3_name" >Computer</div>
                 </figure>
               </div>
             </ons-col>
         </ons-row>
         <ons-row class="category"style="text-align: center;">  
-          <ons-col modifier="nodivider" id="Category_4" >
+          <ons-col modifier="nodivider" id="Category_4" style="width: 75px; height: 75px;">
             <div class="category_wrapper">
               <figure class="category_thumbnail">
                 <ons-icon size="30px" icon="md-local-see"></ons-icon>
@@ -71,7 +71,7 @@
               </figure>
             </div>
           </ons-col>
-          <ons-col modifier="nodivider" id="Category_5" >
+          <ons-col modifier="nodivider" id="Category_5"style="width: 75px; height: 75px;" >
             <div class="category_wrapper">
               <figure class="category_thumbnail">
                 <ons-icon size="30px" icon="md-event-seat"></ons-icon>
@@ -79,7 +79,7 @@
               </figure>
             </div>
           </ons-col>
-          <ons-col modifier="nodivider" id="Category_6" >
+          <ons-col modifier="nodivider" id="Category_6"style="width: 75px; height: 75px;" >
               <div class="category_wrapper">
                 <figure class="category_thumbnail">
                   <ons-icon size="30px" icon="md-phone"></ons-icon>
@@ -89,7 +89,7 @@
             </ons-col>
         </ons-row>
         <ons-row class="category"style="text-align: center;">    
-          <ons-col modifier="nodivider" id="Category_7" >
+          <ons-col modifier="nodivider" id="Category_7"style="width: 75px; height: 75px;" >
             <div class="category_wrapper">
               <figure class="category_thumbnail">
                 <ons-icon size="30px" icon="md-toys"></ons-icon>
@@ -97,7 +97,7 @@
               </figure>
             </div>
           </ons-col>
-          <ons-col modifier="nodivider" id="Category_8" >
+          <ons-col modifier="nodivider" id="Category_8"style="width: 75px; height: 75px;" >
             <div class="category_wrapper">
               <figure class="category_thumbnail">
                 <ons-icon size="30px" icon="md-devices-other"></ons-icon>
@@ -105,7 +105,7 @@
               </figure>
             </div>
           </ons-col>
-          <ons-col modifier="nodivider" id="Category_9" >
+          <ons-col modifier="nodivider" id="Category_9"style="width: 75px; height: 75px;" >
               <div class="category_wrapper">
                 <figure class="category_thumbnail">
                   <ons-icon size="30px" icon="md-kitchen"></ons-icon>
@@ -114,7 +114,36 @@
               </div>
             </ons-col>
         </ons-row>
-      </div>
+      </div><style type="text/css">
+      .category {
+        margin: 20px 0px;
+        padding: 0px 30px;
+      }
+
+      .category_wrapper {
+        max-width: 120px;
+        width: 90%;
+        margin: auto;
+        background-color: rgba(128, 128, 128, 0.62);
+      }
+
+      .category_wrapper ons-icon {
+        font-size: 55px;
+        padding-top: 10px;
+        line-height: 0.75em;
+      }
+
+      .category_thumbnail {
+        display: inline-block;
+        margin: 16px 0px;
+      }
+
+      .category_title {
+        font-size: 12px;
+        font-weight: bold;
+        padding-top: 10px;
+      }
+      </style>
     </ons-page>
   </template>
 
