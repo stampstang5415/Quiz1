@@ -11,7 +11,13 @@
 <body>
   <ons-page>
     <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button icon="md-shopping-basket" style="color: rgb(255, 187, 0); font-size: 30px;"></ons-toolbar-button>
+      </div>
       <div class="center">Home</div>
+      <div class="right">
+        <ons-toolbar-button icon="md-help" style="color: rgb(255, 187, 0); font-size: 30px;"></ons-toolbar-button>
+      </div>
     </ons-toolbar>
 
     <ons-tabbar swipeable position="auto">
@@ -27,7 +33,7 @@
       <p style="text-align: center; margin-top: 10px;">
         <ons-search-input placeholder="Search" onchange="ons.notification.alert('Searched for: ' + this.value)"></ons-search-input>
       </p>
-      <ons-carousel  swipeable auto-scroll overscrollable id="carousel" style="height:300px">
+      <ons-carousel swipeable auto-scroll overscrollable id="carousel" style="height:300px">
         <ons-carousel-item style="background: url('1.jpg') no-repeat center; background-size: contain; background-position:top;">
         </ons-carousel-item>
         <ons-carousel-item style="background: url('2.jpg') no-repeat center; background-size: contain; background-position:top;">
@@ -37,121 +43,157 @@
       </ons-carousel>
       <div>
         <ons-row class="category" style="text-align: center;">
-          <ons-col modifier="nodivider" id="Category_1"  style="width: 75px; height: 75px;">
-            <div class="category_wrapper" style="background-color: aqua" >
+          <ons-col modifier="nodivider" id="Category_1" style="width: 75px; height: 75px;">
+            <div class="category_wrapper" style="background-color: aqua">
               <figure class="category_thumbnail">
-                <ons-icon size="30px" icon="md-face"></ons-icon>
+                <ons-icon size="50px" icon="md-face"></ons-icon>
                 <div class="category_title" id="Category_1_name">Beauty</div>
               </figure>
             </div>
           </ons-col>
-          <ons-col modifier="nodivider" id="Category_2 "style="width: 75px; height: 75px;" >
+          <ons-col modifier="nodivider" id="Category_2 " style="width: 75px; height: 75px;">
             <div class="category_wrapper" style="background-color: rgb(0, 255, 76)">
               <figure class="category_thumbnail">
-                <ons-icon size="30px" icon="md-directions-bike"></ons-icon>
+                <ons-icon size="50px" icon="md-directions-bike"></ons-icon>
                 <div class="category_title" id="Category_2_name">Sports</div>
               </figure>
             </div>
           </ons-col>
-          <ons-col modifier="nodivider" id="Category_3"style="width: 75px; height: 75px;" >
-              <div class="category_wrapper" style="background-color: rgb(183, 0, 255)">
-                <figure class="category_thumbnail">
-                  <ons-icon size="30px" icon="md-desktop-mac"></ons-icon>
-                  <div class="category_title" id="Category_3_name" >Computer</div>
-                </figure>
-              </div>
-            </ons-col>
+          <ons-col modifier="nodivider" id="Category_3" style="width: 75px; height: 75px;">
+            <div class="category_wrapper" style="background-color: rgb(183, 0, 255)">
+              <figure class="category_thumbnail">
+                <ons-icon size="50px" icon="md-desktop-mac"></ons-icon>
+                <div class="category_title" id="Category_3_name">Computer</div>
+              </figure>
+            </div>
+          </ons-col>
         </ons-row>
-        <ons-row class="category"style="text-align: center;">  
+        <ons-row class="category" style="text-align: center;">
           <ons-col modifier="nodivider" id="Category_4" style="width: 75px; height: 75px;">
             <div class="category_wrapper" style="background-color: rgb(88, 248, 248)">
               <figure class="category_thumbnail">
-                <ons-icon size="30px" icon="md-local-see"></ons-icon>
+                <ons-icon size="50px" icon="md-local-see"></ons-icon>
                 <div class="category_title" id="Category_4_name">Camera</div>
               </figure>
             </div>
           </ons-col>
-          <ons-col modifier="nodivider" id="Category_5"style="width: 75px; height: 75px;" >
+          <ons-col modifier="nodivider" id="Category_5" style="width: 75px; height: 75px;">
             <div class="category_wrapper" style="background-color: rgb(66, 243, 119)">
               <figure class="category_thumbnail">
-                <ons-icon size="30px" icon="md-weekend"></ons-icon>
+                <ons-icon size="50px" icon="md-local-hotel"></ons-icon>
                 <div class="category_title" id="Category_5_name">Furniture</div>
               </figure>
             </div>
           </ons-col>
-          <ons-col modifier="nodivider" id="Category_6"style="width: 75px; height: 75px;" >
-              <div class="category_wrapper" style="background-color: rgb(201, 86, 247)">
-                <figure class="category_thumbnail">
-                  <ons-icon size="30px" icon="md-phone"></ons-icon>
-                  <div class="category_title" id="Category_6_name">Smartphone</div>
-                </figure>
-              </div>
-            </ons-col>
+          <ons-col modifier="nodivider" id="Category_6" style="width: 75px; height: 75px;">
+            <div class="category_wrapper" style="background-color: rgb(201, 86, 247)">
+              <figure class="category_thumbnail">
+                <ons-icon size="50px" icon="md-phone"></ons-icon>
+                <div class="category_title" id="Category_6_name">Smartphone</div>
+              </figure>
+            </div>
+          </ons-col>
         </ons-row>
-        <ons-row class="category"style="text-align: center;">    
-          <ons-col modifier="nodivider" id="Category_7"style="width: 75px; height: 75px;" >
+        <ons-row class="category" style="text-align: center;">
+          <ons-col modifier="nodivider" id="Category_7" style="width: 75px; height: 75px;">
             <div class="category_wrapper" style="background-color: rgb(150, 250, 250)">
               <figure class="category_thumbnail">
-                <ons-icon size="30px" icon="md-toys"></ons-icon>
+                <ons-icon size="50px" icon="md-toys"></ons-icon>
                 <div class="category_title" id="Category_7_name">Toy</div>
               </figure>
             </div>
           </ons-col>
-          <ons-col modifier="nodivider" id="Category_8"style="width: 75px; height: 75px;" >
+          <ons-col modifier="nodivider" id="Category_8" style="width: 75px; height: 75px;">
             <div class="category_wrapper" style="background-color: rgb(143, 245, 174)">
               <figure class="category_thumbnail">
-                <ons-icon size="30px" icon="ion-settings"></ons-icon>
+                <ons-icon size="41px" icon="ion-settings"></ons-icon>
                 <div class="category_title" id="Category_8_name">Hardware</div>
               </figure>
             </div>
           </ons-col>
-          <ons-col modifier="nodivider" id="Category_9"style="width: 75px; height: 75px;" >
-              <div class="category_wrapper" style="background-color: rgb(218, 141, 248)">
-                <figure class="category_thumbnail">
-                  <ons-icon size="30px" icon="md-kitchen"></ons-icon>
-                  <div class="category_title" id="Category_9_name">Appliance</div>
-                </figure>
-              </div>
-            </ons-col>
+          <ons-col modifier="nodivider" id="Category_9" style="width: 75px; height: 75px;">
+            <div class="category_wrapper" style="background-color: rgb(218, 141, 248)">
+              <figure class="category_thumbnail">
+                <ons-icon size="50px" icon="md-local-printshop"></ons-icon>
+                <div class="category_title" id="Category_9_name">Appliance</div>
+              </figure>
+            </div>
+          </ons-col>
         </ons-row>
-      </div><style type="text/css">
-      .category {
-        margin: 20px 0px;
-        padding: 0px 30px;
-      }
+      </div>
+      <style type="text/css">
+        .category {
+          margin: 20px 0px;
+          padding: 0px 30px;
+        }
 
-      .category_wrapper {
-        max-width: 120px;
-        width: 90%;
-        margin: auto;
-        background-color: rgba(243, 34, 34, 0.62);
-      }
+        .category_wrapper {
+          max-width: 120px;
+          width: 90%;
+          margin: auto;
+          background-color: rgba(243, 34, 34, 0.62);
+        }
 
-      .category_wrapper ons-icon {
-        font-size: 55px;
-        padding-top: 10px;
-        line-height: 0.75em;
-      }
+        .category_wrapper ons-icon {
+          font-size: 50px;
+          padding-top: 10px;
+          line-height: 0.75em;
+        }
 
-      .category_thumbnail {
-        display: inline-block;
-        margin: 16px 0px;
-      }
+        .category_thumbnail {
+          display: inline-block;
+          margin: 16px 0px;
+        }
 
-      .category_title {
-        font-size: 12px;
-        font-weight: bold;
-        padding-top: 10px;
-      }
+        .category_title {
+          font-size: 12px;
+          font-weight: bold;
+          padding-top: 10px;
+        }
       </style>
     </ons-page>
   </template>
 
   <template id="tab2.html">
     <ons-page id="Tab2">
-      <p style="text-align: center;">
-        This is the second page.
-      </p>
+      <ons-list-header>SHOPPING CART</ons-list-header>
+      <ons-list-item>
+        <div class="left">
+          <img class="list-item__thumbnail" src="img/item1.jpg">
+        </div>
+        <div class="center">
+          <span class="list-item__title">Apple Watch Series 3 GPS 42 mm Gray</span>
+          <span class="list-item__subtitle">฿ 12,650.0</span>
+        </div>
+        <div class="right">
+          <ons-icon icon="md-delete" class="list-item__icon"></ons-icon>
+        </div>
+      </ons-list-item>
+      <ons-list-item>
+        <div class="left">
+          <img class="list-item__thumbnail" src="img/item2.jpg">
+        </div>
+        <div class="center">
+          <span class="list-item__title">MICROLAB SPEAKER 2.1</span>
+          <span class="list-item__subtitle">฿ 1,570.0</span>
+        </div>
+        <div class="right">
+          <ons-icon icon="md-delete" class="list-item__icon"></ons-icon>
+        </div>
+      </ons-list-item>
+      <ons-list-item>
+        <div class="left">
+          <img class="list-item__thumbnail" src="img/item3.jpg">
+        </div>
+        <div class="center">
+          <span class="list-item__title">Nike Air Max 90</span>
+          <span class="list-item__subtitle">฿ 2,990.0</span>
+        </div>
+        <div class="right">
+          <ons-icon icon="md-delete" class="list-item__icon"></ons-icon>
+        </div>
+      </ons-list-item>
+      <ons-button modifier="large">PROCEED TO PLAY</ons-button>
     </ons-page>
   </template>
 </body>
