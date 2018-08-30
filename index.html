@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
-        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-        <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
-        <script src="ss.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <script src="ss.js"></script>
 </head>
+
 <body>
   <ons-page>
     <ons-toolbar>
       <div class="center">ion-home</div>
     </ons-toolbar>
-  
+
     <ons-tabbar swipeable position="auto">
       <ons-tab page="tab1.html" label="Home" icon="ion-home, material:md-home" badge="" active>
       </ons-tab>
-      <ons-tab page="tab2.html" label="Cart" icon="md-shopping-cart" >
+      <ons-tab page="tab2.html" label="Cart" icon="md-shopping-cart">
       </ons-tab>
     </ons-tabbar>
   </ons-page>
-  
+
   <template id="tab1.html">
     <ons-page id="Tab1">
       <p style="text-align: center; margin-top: 10px;">
-        <ons-search-input
-          placeholder="Search"
-          onchange="ons.notification.alert('Searched for: ' + this.value)"
-        ></ons-search-input>
+        <ons-search-input placeholder="Search" onchange="ons.notification.alert('Searched for: ' + this.value)"></ons-search-input>
       </p>
       <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
-        <ons-carousel-item style="background-color: #085078;">
-          <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
-            BLUE
+        <ons-carousel-item style="background: url('1.jpg') no-repeat center; background-size: contain;">
+          <div >
           </div>
         </ons-carousel-item>
-        <ons-carousel-item style="background-color: #373B44;">
-          <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
-            DARK
+        <ons-carousel-item style="background: url('2.jpg') no-repeat center; background-size: contain;">
+          <div >
           </div>
         </ons-carousel-item>
-        <ons-carousel-item style="background-color: #D38312;">
-          <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
-            ORANGE
+        <ons-carousel-item style="background: url('3.jpg') no-repeat center; background-size: contain;">
+          <div >
           </div>
         </ons-carousel-item>
       </ons-carousel>
     </ons-page>
   </template>
-  
+
   <template id="tab2.html">
     <ons-page id="Tab2">
       <p style="text-align: center;">
@@ -56,4 +52,5 @@
     </ons-page>
   </template>
 </body>
+
 </html>
